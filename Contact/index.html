@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Your first Webpage
+        </title>
+        <link rel="shortcut icon" href="../Images/WTNVIcon.jpg">
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="fixed-bar"><h1 class="page-title">Your World</h1></header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <main>
+            <form class="form">
+                <label for="input-name">Name:</label>
+                <input type="text" id="input-name" class="form-input" name="name" oninput="checkInput()">
+                <label for="inputemail">E-mail:</label>
+                <input type="text" id="input-email" name="email" class="form-input" oninput="checkInput()">
+                <label for="input-msg">Message:</label>
+                <textarea id="input-msg" cols="30"rows="10" class="form-input" name="message" oninput="checkInput()"></textarea>
+                <button type="submit" class="submit-button" disbaled>Submit</button>
+            </form>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
